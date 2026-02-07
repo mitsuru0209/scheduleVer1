@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { YearLevel, SubjectCategory, Subject, Teacher, DailySchedule, AdminItem, AdminItemType, TeacherType, MasterTemplate } from './types.ts';
 import { CATEGORY_COLORS, PERIODS_PER_DAY, PERIOD_TIME_LABELS, INITIAL_SUBJECTS, INITIAL_TEACHERS, createInitialSchedules, formatDateJapanese } from './constants.tsx';
-import WordPressExport from './WordPressExport.tsx';
+import WordPressExport from './components/WordPressExport';
 
 // --- Utils ---
 const safeParseDate = (dateStr: string) => new Date(dateStr.replace(/-/g, '/'));
