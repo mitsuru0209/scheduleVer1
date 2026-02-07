@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徳島医療福祉専門学校 授業スケジュール</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 5mm;
+            }
+            body {
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            /* 印刷時に不要なUIを隠す */
+            .no-print {
+                display: none !important;
+            }
+            /* 印刷専用要素を表示 */
+            .print-only {
+                display: block !important;
+            }
+            /* スクロールを解除して全体を表示 */
+            .overflow-x-auto {
+                overflow: visible !important;
+                display: block !important;
+            }
+            /* 横幅を100%に強制 */
+            .min-w-\[1000px\] {
+                min-width: 0 !important;
+                width: 100% !important;
+            }
+            /* コンテナの角丸や影を削除してシンプルに */
+            .rounded-\[3rem\], .rounded-\[4rem\], .rounded-2xl, .shadow-2xl, .shadow-xl {
+                border-radius: 4px !important;
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+            }
+            /* 印刷時のフォントサイズ調整 */
+            .text-sm { font-size: 10pt !important; }
+            .text-xs { font-size: 8pt !important; }
+            .text-xl { font-size: 14pt !important; }
+        }
+        
+        .print-only {
+            display: none;
+        }
+        
+        /* スクロールバーのカスタマイズ (Web閲覧用) */
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #cbd5e1;
+          border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+</body>
+</html>
